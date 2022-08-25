@@ -1,0 +1,117 @@
+/* Mobile and tablet */
+@media (max-width: 1023px) {
+    
+    .header{
+        height: 70px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .app__contain{
+        margin-top: 90px;
+    }
+   
+    .header__sort-bar{
+        display: flex;
+    }
+    .grid__column-10{
+        width: 100%;
+        padding: 0 15px;
+    }
+    /*.header__cart-list {
+        position: fixed; 
+        top: 70px; 
+        width: 100%;
+        right: 0;
+        height: 100px;
+    }*/
+    .category{
+        display: none;
+    }
+    .grid__column-2{
+        display: none;
+    }
+    .mobile-category{
+        display: block;
+    }
+    .header__logo-img{
+        width: 120px;
+    }
+}
+/* Tablet */
+@media(min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    .header__cart{
+        width: 74px;
+        text-align: right;
+    }
+    .header__search-history{
+        width: 340px;
+    }
+}
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .header-with-search{
+        justify-content: space-between;
+    }
+    .header__logo{
+        width: unset;
+        margin-top: 8px;
+    }
+    .header__cart{
+        width: unset;
+    }
+   .header__mobile-search{
+    display: block;
+    cursor: pointer;
+    margin-top: 8px;
+    }
+   .header__search{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 70px;
+    z-index: 1;
+    padding: 0 12px;
+    animation: mobileSearch linear 0.3s;
+    display: none;
+    border: 1px solid #ebe9e9;
+    }
+    .header__search-checkbox:checked ~ .header__search{
+        display: flex;
+    }
+    .pagination-item{
+        margin: 0;
+    }
+    .footer__mobile{
+        padding: 0 16px;
+    }
+    .footer__download{
+        margin-bottom: 10px;
+    }
+    .pagination-item__link{
+        font-size: 1.6rem;
+        min-width: 30px;
+    }
+    @keyframes mobileSearch {
+        from{
+            opacity: 0;
+            top: 35px;
+        }
+        to{
+            opacity: 1;
+            top: 70px;
+        }
+    }
+}
